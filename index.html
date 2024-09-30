@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+    <style>
+        table {
+            border: 3px #6c1da0 solid;
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+            /* borda se colapsar/juntar, separate é pra deixar um pouco separado */
+            font-family: Georgia, 'Times New Roman', Times, serif}
+
+        th,
+        td {
+            border: 3px #2e54d1 solid;
+            padding: 5px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #30a9ce;
+            color: antiquewhite;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        tr:hover {
+            background-color: #3fc0e79a;
+        }
+
+        /* hover é pra mudar cor de fundo  */
+        caption {
+            padding: 10px;
+            font-size: larger;
+        }
+        p{
+         text-align: center;
+         background-color: #3fc0e79a;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Preços de Produtos Eletrônicos</caption><!-- pode ser usado como p  -->
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preços</th>
+            </tr>
+        </thead>
+        <!-- produto faz parte do cabeçalho, não usar o thead deixa de ser semantico -->
+        <tbody>
+            <tr>
+                <td>Notebook</td>
+                <td>R$ 3.500,00</td>
+            </tr>
+
+            <tr>
+                <td>Smartphone</td>
+                <td>R$ 1.200,00</td>
+            </tr>
+            <tr>
+                <td>Televisão</td>
+                <td>R$ 3.749,00</td>
+            </tr>
+            <tr>
+                <td>Smartwatch</td>
+                <td>R$ 1.399,00</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>R$9.848,00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <caption><strong>Horário de Aulas</strong></caption>
+        <thead>
+<tr>
+    <th colspan="5">Horário de Aulas - Turma 2024</th>
+</tr>
+        <tbody>
+            <tr>
+                <td>Horário</td>
+                <td>Segunda-feira</td>
+                <td>Terça-feira</td>
+                <td>Quarta-feira</td>
+                <td>Quinta-feira</td>
+        </tr>
+        <tr>
+            <td>08:00 - 09:00</td>
+            <td>Matemática</td>
+            <td>História</td>
+            <td rowspan="2">Educação Física</td>
+            <td>Química</td>
+        </tr>
+        <tr>
+            <td>09:00 - 10:00</td>
+            <td colspan="2">Português (2 horas)</td>
+            <td>Biologia</td>
+        </tr>
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td>Geografia</td>
+            <td>Física</td>
+            <td>Matemática</td>
+            <td>História</td>
+        </tr>
+        <tr>
+            <td>11:00 - 12:00</td>
+            <td colspan="5">Projeto Interdisciplinar (todas as disciplinas)</td>
+        </tr>
+        </tbody>
+        </thead>
+    </table>
+</body>
+
+<p><strong>Fonte:</strong> <a href="https://www.dio.me/articles/tabelas-em-html5">Tabelas em HTML5 </p>
+</html>
